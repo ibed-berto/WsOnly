@@ -24,3 +24,11 @@ wget https://raw.githubusercontent.com/ibed-berto/WsOnly/main/stunnel5/stunnel5.
 #install ws
 wget https://raw.githubusercontent.com/ibed-berto/WsOnly/main/websocket/install.sh && chmod +x install.sh && screen -S install ./install.sh
 
+rm -f /root/build.sh 
+rm -f /root/badvpn.sh
+rm -f /root/cert.sh
+rm -f /root/stunnel5.sh
+rm -f /root/install.sh
+rm -f setupws.sh
+
+reboot
