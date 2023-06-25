@@ -152,5 +152,16 @@ iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save
 netfilter-persistent reload
 
+
+# remove unnecessary files
+cd
+apt autoclean -y
+apt -y remove --purge unscd
+apt-get -y --purge remove samba*;
+apt-get -y --purge remove apache2*;
+apt-get -y --purge remove bind9*;
+apt-get -y remove sendmail*
+apt autoremove -y
+
 /etc/init.d/ssh restart
 /etc/init.d/dropbear restart
