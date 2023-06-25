@@ -152,6 +152,10 @@ iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save
 netfilter-persistent reload
 
+#auto reboot
+echo "0 5 * * * root clearlog && reboot" >> /etc/crontab
+echo "0 0 * * * root xp" >> /etc/crontab
+echo "0 1 * * * root delexp" >> /etc/crontab
 
 # remove unnecessary files
 cd
