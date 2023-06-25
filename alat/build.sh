@@ -13,6 +13,10 @@ email=ibedberto@gmail.com
 echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
 sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
 
+# simple password minimal
+wget -O /etc/pam.d/common-password "https://${ssh}/password"
+chmod +x /etc/pam.d/common-password
+
 #update
 apt update -y
 apt upgrade -y
