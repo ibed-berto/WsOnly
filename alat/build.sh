@@ -68,5 +68,85 @@ apt-get --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen rs
 echo "clear" >> .profile
 echo "neofetch" >> .profile
 
+# install dropbear
+apt -y install dropbear
+sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=143/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 109 -p 1153"/g' /etc/default/dropbear
+echo "/bin/false" >> /etc/shells
+echo "/usr/sbin/nologin" >> /etc/shells
+/etc/init.d/dropbear restart
+
+# Install SSLH
+apt -y install sslh
+rm -f /etc/default/sslh
+
+# Settings SSLH
+cat > /etc/default/sslh <<-END
+# Default options for sslh initscript
+# sourced by /etc/init.d/sslh
+
+# Disabled by default, to force yourself
+# to read the configuration:
+# - /usr/share/doc/sslh/README.Debian (quick start)
+# - /usr/share/doc/sslh/README, at "Configuration" section
+# - sslh(8) via "man sslh" for more configuration details.
+# Once configuration ready, you *must* set RUN to yes here
+# and try to start sslh (standalone mode only)
+
+RUN=yes
+
+# binary to use: forked (sslh) or single-thread (sslh-select) version
+# systemd users: don't forget to modify /lib/systemd/system/sslh.service
+DAEMON=/usr/sbin/sslh
+
+DAEMON_OPTS="--user sslh --listen 0.0.0.0:443 --ssl 127.0.0.1:777 --ssh 127.0.0.1:109 --openvpn 127.0.0.1:1194 --http 127.0.0.1:80 --pidfile /var/run/sslh/sslh.pid -n"
+
+END
+
+# Restart Service SSLH
+service sslh restart
+systemctl restart sslh
+/etc/init.d/sslh restart
+/etc/init.d/sslh status
+/etc/init.d/sslh restart
+
+# install fail2ban
+apt -y install fail2ban
+
+# Instal DDOS Flate
+if [ -d '/usr/local/ddos' ]; then
+	echo; echo; echo "Please un-install the previous version first"
+	exit 0
+else
+	mkdir /usr/local/ddos
+fi
+clear
+
+# banner /etc/issue.net
+echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
+sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
+# Ganti Banner
+wget -O /etc/issue.net "https://${ssh}/issue.net"
 
 
+
+# blockir torrent
+iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
+iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
+iptables -A FORWARD -m string --string "find_node" --algo bm -j DROP
+iptables -A FORWARD -m string --algo bm --string "BitTorrent" -j DROP
+iptables -A FORWARD -m string --algo bm --string "BitTorrent protocol" -j DROP
+iptables -A FORWARD -m string --algo bm --string "peer_id=" -j DROP
+iptables -A FORWARD -m string --algo bm --string ".torrent" -j DROP
+iptables -A FORWARD -m string --algo bm --string "announce.php?passkey=" -j DROP
+iptables -A FORWARD -m string --algo bm --string "torrent" -j DROP
+iptables -A FORWARD -m string --algo bm --string "announce" -j DROP
+iptables -A FORWARD -m string --algo bm --string "info_hash" -j DROP
+iptables-save > /etc/iptables.up.rules
+iptables-restore -t < /etc/iptables.up.rules
+netfilter-persistent save
+netfilter-persistent reload
+
+/etc/init.d/ssh restart
+/etc/init.d/dropbear restart
