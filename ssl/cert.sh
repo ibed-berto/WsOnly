@@ -1,5 +1,6 @@
 #!/bin/bash
 
+domain=sgdo.ibedberto.my.id
 
 #inst alat
 apt install iptables iptables-persistent -y
