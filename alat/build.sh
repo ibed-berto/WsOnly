@@ -14,7 +14,7 @@ echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
 sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://${ssh}/password"
+wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/alat/password"
 chmod +x /etc/pam.d/common-password
 
 #update
@@ -131,7 +131,7 @@ clear
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 # Ganti Banner
-wget -O /etc/issue.net "https://${ssh}/issue.net"
+wget -O /etc/issue.net "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/alat/issue.net"
 
 
 
