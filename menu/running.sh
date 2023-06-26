@@ -179,10 +179,9 @@ fi
 
 # STATUS SERVICE WONDERSHAPER
 if [[ $limit == "running" ]]; then 
-   limit=" ${GREEN}Running ${NC}( No Error )${NC}"
+   cek_limit=" ${GREEN}Running ${NC}( No Error )${NC}"
 else
-   limit="${RED}  Not Running ${n 
-   NC}  ( Error )${NC}"
+   cek_limit="${RED}  Not Running ${NC}  ( Error )${NC}"
 fi
 
 # TOTAL RAM
@@ -245,6 +244,6 @@ echo -e "❇️ Crons                          :$status_cron"
 echo -e "❇️ Websocket TLS                  :$swstls"
 echo -e "❇️ Websocket None TLS             :$swsdrop"
 echo -e "❇️ SSL / SSH Multiplexer (SSLH)   :$sosslh"
-echo -e "❇️ Limit Bandwidth (Wondershaper) :$limit"
+echo -e "❇️ Limit Bandwidth (Wondershaper) :$cek_limit"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo ""
