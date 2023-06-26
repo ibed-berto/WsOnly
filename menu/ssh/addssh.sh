@@ -13,8 +13,8 @@ LIGHT='\033[0;37m'
 # ==========================================
 # Getting
 
-domain=$(cat /etc/xray/domain)
-sldomain=$(cat /root/nsdomain)
+domain=$(cat /etc/stunnel5/domain)
+#sldomain=$(cat /root/nsdomain)
 
 clear
 read -p "Username : " Login
