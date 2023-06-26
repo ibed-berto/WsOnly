@@ -3,7 +3,7 @@
 cd /usr/bin
 
 #Delete file
-rm -rf menu 
+rm -rf addssh
 rm -rf autokill 
 rm -rf ceklimit 
 rm -rf cekssh 
@@ -29,7 +29,7 @@ rm -rf updatemenu
 
 
 #Download menu
-wget -O menu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/addssh.sh"
+wget -O addssh "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/addssh.sh"
 wget -O autokill "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/autokill.sh"
 wget -O ceklimit "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/ceklimit.sh"
 wget -O cekssh "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/cekssh.sh"
@@ -54,7 +54,7 @@ wget -O ubahport "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/
 wget -O updatemenu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/updatemenu.sh"
 
 #IZIN
-chmod +x menu 
+chmod +x addssh
 chmod +x autokill 
 chmod +x ceklimit 
 chmod +x cekssh 
