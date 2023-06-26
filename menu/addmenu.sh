@@ -7,25 +7,25 @@ rm -rf menu
 rm -rf autokill 
 rm -rf ceklimit 
 rm -rf cekssh 
-chmod +x delexp 
-chmod +x delssh 
-chmod +x member 
-chmod +x restart 
-chmod +x tendang 
+rm -rf delexp 
+rm -rf delssh 
+rm -rf member 
+rm -rf restart 
+rm -rf tendang 
 
-chmod +x info 
-chmod +x ipsaya 
-chmod +x limitspeed 
-chmod +x menu 
-chmod +x portsshnontls 
-chmod +x portsshtls 
-chmod +x running 
-chmod +x setmenu 
-chmod +x sl-fix 
-chmod +x speedtest 
-chmod +x sshovpnmenu 
-chmod +x ubahport 
-chmod +x updatemenu 
+rm -rf info 
+rm -rf ipsaya 
+rm -rf limitspeed 
+rm -rf menu 
+rm -rf portsshnontls 
+rm -rf portsshtls 
+rm -rf running 
+rm -rf setmenu 
+rm -rf sl-fix 
+rm -rf speedtest 
+rm -rf sshovpnmenu 
+rm -rf ubahport 
+rm -rf updatemenu 
 
 
 #Download menu
