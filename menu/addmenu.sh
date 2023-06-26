@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /usr/bin
+
 #Download menu
 wget -O menu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/addssh.sh"
 wget -O autokill "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/autokill.sh"
@@ -15,4 +17,6 @@ wget -O info "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/info
 wget -O ipsaya "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ipsaya.sh"
 wget -O limitspeed "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/limitspeed.sh"
 wget -O menu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/menu.sh"
+
+cd
 
