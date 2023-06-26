@@ -26,7 +26,7 @@ case $menu in
 host
 ;;
 2)
-changeport
+ubahport
 ;;
 3)
 limitspeed
