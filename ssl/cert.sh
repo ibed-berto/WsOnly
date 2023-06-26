@@ -1,6 +1,6 @@
 #!/bin/bash
 
-domain=sgdo.ibedberto.my.id
+domain=$(cat /etc/stunnel5/domain)
 
 #inst alat
 apt install iptables iptables-persistent -y
