@@ -29,6 +29,7 @@ rm -f /root/badvpn.sh
 rm -f /root/cert.sh
 rm -f /root/stunnel5.sh
 rm -f /root/install.sh
-rm -f setupws.sh
 
+sleep 15
+rm -f setupws.sh
 reboot
