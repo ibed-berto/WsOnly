@@ -96,6 +96,7 @@ osslh=$(systemctl status sslh | grep Active | awk '{print $3}' | cut -d "(" -f2 
 #ohp=$(systemctl status dropbear-ohp | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 #ohq=$(systemctl status openvpn-ohp | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 #ohr=$(systemctl status ssh-ohp | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
+limit=$(systemctl status wondershaper | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
 
 # COLOR VALIDATION
 RED='\033[0;31m'
@@ -176,6 +177,14 @@ else
    sosslh="${RED}  Not Running ${NC}  ( Error )${NC}"
 fi
 
+# STATUS SERVICE WONDERSHAPER
+if [[ $limit == "running" ]]; then 
+   limit=" ${GREEN}Running ${NC}( No Error )${NC}"
+else
+   limit="${RED}  Not Running ${n 
+   NC}  ( Error )${NC}"
+fi
+
 # TOTAL RAM
 total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
 totalram=$(($total_ram/1024))
@@ -236,5 +245,6 @@ echo -e "❇️ Crons                          :$status_cron"
 echo -e "❇️ Websocket TLS                  :$swstls"
 echo -e "❇️ Websocket None TLS             :$swsdrop"
 echo -e "❇️ SSL / SSH Multiplexer (SSLH)   :$sosslh"
+echo -e "❇️ Limit Bandwidth (Wondershaper) :$limit"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo ""
