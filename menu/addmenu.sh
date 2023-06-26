@@ -2,6 +2,32 @@
 
 cd /usr/bin
 
+#Delete file
+rm -rf menu 
+rm -rf autokill 
+rm -rf ceklimit 
+rm -rf cekssh 
+chmod +x delexp 
+chmod +x delssh 
+chmod +x member 
+chmod +x restart 
+chmod +x tendang 
+
+chmod +x info 
+chmod +x ipsaya 
+chmod +x limitspeed 
+chmod +x menu 
+chmod +x portsshnontls 
+chmod +x portsshtls 
+chmod +x running 
+chmod +x setmenu 
+chmod +x sl-fix 
+chmod +x speedtest 
+chmod +x sshovpnmenu 
+chmod +x ubahport 
+chmod +x updatemenu 
+
+
 #Download menu
 wget -O menu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/addssh.sh"
 wget -O autokill "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/autokill.sh"
@@ -26,6 +52,31 @@ wget -O speedtest "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu
 wget -O sshovpnmenu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/sshovpnmenu.sh"
 wget -O ubahport "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ubahport.sh"
 wget -O updatemenu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/updatemenu.sh"
+
+#IZIN
+chmod +x menu 
+chmod +x autokill 
+chmod +x ceklimit 
+chmod +x cekssh 
+chmod +x delexp 
+chmod +x delssh 
+chmod +x member 
+chmod +x restart 
+chmod +x tendang 
+
+chmod +x info 
+chmod +x ipsaya 
+chmod +x limitspeed 
+chmod +x menu 
+chmod +x portsshnontls 
+chmod +x portsshtls 
+chmod +x running 
+chmod +x setmenu 
+chmod +x sl-fix 
+chmod +x speedtest 
+chmod +x sshovpnmenu 
+chmod +x ubahport 
+chmod +x updatemenu 
 
 
 cd
