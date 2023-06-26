@@ -11,6 +11,8 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 
+mkdir -p /etc/stunnel5
+
 read -rp "Domain/Host : " -e domain
 #echo "IP=$domain" >>/var/lib/crot/ipvps.conf
 rm -rf /etc/stunnel5/domain
