@@ -5,7 +5,6 @@
 # download menu
 cd /usr/bin
 rm -rf menu
-rm -rf menuinfo
 rm -rf restart
 rm -rf addssh
 rm -rf ipsaya
@@ -23,12 +22,10 @@ wget -O sl-fix "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/sl
 wget -O setmenu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/setmenu.sh"
 wget -O running "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/running.sh"
 wget -O updatemenu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/updatemenu.sh"
-wget -O menuinfo "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/menuinfo.sh"
 wget -O sshovpnmenu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/sshovpn.sh"
 
 chmod +x restart
 chmod +x addssh
-chmod +x menuinfo
 chmod +x menu
 chmod +x ipsaya
 chmod +x sl-fix
