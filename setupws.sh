@@ -34,6 +34,28 @@ rm -f /root/cert.sh
 rm -f /root/stunnel5.sh
 rm -f /root/install.sh
 
+echo "============================================================================" | tee -a log-install.txt
+echo "" | tee -a log-install.txt
+echo "----------------------------------------------------------------------------" | tee -a log-install.txt
+echo ""  | tee -a log-install.txt
+echo "   >>> Service & Port"  | tee -a log-install.txt
+echo "   - Stunnel5                : 443, 445"  | tee -a log-install.txt
+echo "   - Dropbear                : 443, 109, 143"  | tee -a log-install.txt
+echo "   - SSH Websocket TLS       : 443"  | tee -a log-install.txt
+echo "   - SSH Websocket HTTP      : 80"  | tee -a log-install.txt
+echo "   - Badvpn UDPGW            : 7100, 7200, 7300"  | tee -a log-install.txt
+echo ""  | tee -a log-install.txt
+echo "   >>> Server Information & Other Features"  | tee -a log-install.txt
+echo "   - Timezone                : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
+echo "   - Fail2Ban                : [ON]"  | tee -a log-install.txt
+echo "   - IPtables                : [ON]"  | tee -a log-install.txt
+echo "   - Auto-Reboot             : [ON]"  | tee -a log-install.txt
+echo "   - IPv6                    : [OFF]"  | tee -a log-install.txt
+echo "   - Autoreboot On 05.00 GMT +7" | tee -a log-install.txt
+echo "   - Auto Delete Expired Account" | tee -a log-install.txt
+echo "   - White Label" | tee -a log-install.txt
+echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
+
 sleep 15
 rm -f setupws.sh
 reboot
