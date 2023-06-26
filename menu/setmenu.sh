@@ -11,15 +11,14 @@ echo -e "$y-------------------------------------------------------------$wh"
 echo -e "$yy 1$y.  Ubah dan tambah domain/subdomain VPS"
 echo -e "$yy 2$y.  Ubah port VPS"
 echo -e "$yy 3$y.  Limit Bandwith Speed Server"
-echo -e "$yy 4$y.  Check Usage of VPS Ram"
-echo -e "$yy 5$y.  Reboot VPS"
-echo -e "$yy 6$y.  Speedtest VPS"
-echo -e "$yy 7$y.  Displaying System Information"
-echo -e "$yy 8$y.  Menu"
-echo -e "$yy 9$y.  Exit"
+echo -e "$yy 4$y.  Reboot VPS"
+echo -e "$yy 5$y.  Speedtest VPS"
+echo -e "$yy 6$y.  Aplikssi System Information"
+echo -e "$yy 7$y.  Menu"
+echo -e "$yy 8$y.  Exit"
 echo -e "$y-------------------------------------------------------------$wh"
 echo -e ""
-read -p "Select From Options [ 1 - 9 ] : " menu
+read -p "Select From Options [ 1 - 8 ] : " menu
 echo -e ""
 case $menu in
 1)
@@ -32,22 +31,19 @@ ubahport
 limitspeed
 ;;
 4)
-ram
-;;
-5)
 reboot
 ;;
-6)
+5)
 speedtest
 ;;
-7)
+6)
 info
 ;;
-8)
+7)
 clear
 menu
 ;;
-9)
+8)
 clear
 exit
 ;;
