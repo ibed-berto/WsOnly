@@ -27,12 +27,16 @@ wget https://raw.githubusercontent.com/ibed-berto/WsOnly/main/stunnel5/stunnel5.
 #install ws
 wget https://raw.githubusercontent.com/ibed-berto/WsOnly/main/websocket/install.sh && chmod +x install.sh && screen -S install ./install.sh
 
+#install menu
+wget https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/addmenu.sh && chmod +x addmenu.sh && screen -S addmenu ./addmenu.sh
+
 rm -f /root/host.sh
 rm -f /root/build.sh 
 rm -f /root/badvpn.sh
 rm -f /root/cert.sh
 rm -f /root/stunnel5.sh
 rm -f /root/install.sh
+rm -f /root/addmenu.sh
 
 echo "============================================================================" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
