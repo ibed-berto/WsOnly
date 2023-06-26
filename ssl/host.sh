@@ -13,7 +13,7 @@ LIGHT='\033[0;37m'
 
 mkdir -p /etc/stunnel5
 
-read -rp "Domain/Host : " -e domain
+read -rp "Masukan Domain/Host Yang sudah terpointing Di Cloudflar : " -e domain
 #echo "IP=$domain" >>/var/lib/crot/ipvps.conf
 rm -rf /etc/stunnel5/domain
 echo $domain >> /etc/stunnel5/domain
