@@ -22,7 +22,7 @@ wget -O sl-fix "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/sl
 wget -O setmenu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/setmenu.sh"
 wget -O running "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/running.sh"
 wget -O updatemenu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/updatemenu.sh"
-wget -O sshovpnmenu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/sshovpn.sh"
+wget -O sshovpnmenu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/sshovpnmenu.sh"
 
 chmod +x restart
 chmod +x addssh
