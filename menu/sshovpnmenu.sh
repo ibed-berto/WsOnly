@@ -7,15 +7,15 @@ yl="\033[0;1;33m"
 wh="\033[0m"
 echo -e "$y                 SSH WEBSOCKET $wh"
 echo -e "$y-------------------------------------------------------------$wh"
-echo -e "$yy 1$y.  Create SSH & OpenVPN Account"
-echo -e "$yy 2$y.  Check User Login SSH & OpenVPN"
-echo -e "$yy 3$y.  Daftar Member SSH & OpenVPN"
-echo -e "$yy 4$y.  Delete SSH & OpenVpn Account"
-echo -e "$yy 5$y.  Delete User Expired SSH & OpenVPN"
-echo -e "$yy 6$y.  Set up Autokill SSH"
+echo -e "$yy 1$y.  Create SSH Websocket Account"
+echo -e "$yy 2$y.  Check User Login SSH Websocket"
+echo -e "$yy 3$y.  Daftar Member SSH Websocket"
+echo -e "$yy 4$y.  Delete SSH Websocket Account"
+echo -e "$yy 5$y.  Delete User Expired SSH Websocket"
+echo -e "$yy 6$y.  Set up Autokill SSH Websocket"
 echo -e "$yy 7$y.  Displays Users Who Do Multi Login SSH"
-echo -e "$yy 8$y. Restart All Service"
-echo -e "$yy 9$y. Menu Utama"
+echo -e "$yy 8$y.  Restart All Service"
+echo -e "$yy 9$y.  Menu Utama"
 echo -e "$yy 10$y. Exit"
 echo -e "$y-------------------------------------------------------------$wh"
 read -p "Select From Options [ 1 - 10 ] : " menu
@@ -25,7 +25,8 @@ case $menu in
 addssh
 ;;
 2)
-cekceklimit
+cekssh
+;;
 3)
 member
 ;;
