@@ -10,6 +10,9 @@ rm certssh
 rm -rf updatemenu
 rm -r updatemenu
 rm updatemenu
+rm -rf menu
+rm -r menu
+rm menu
 
 cd /usr/bin
 wget -O certssh "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/ssl/cert.sh"
