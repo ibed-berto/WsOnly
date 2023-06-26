@@ -15,16 +15,16 @@ rm -rf setmenu
 rm -rf running
 rm -rf updatemenu
 
-wget -O restart "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/ssh/restart.sh"
-wget -O addssh "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/ssh/addssh.sh"
-wget -O menu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/menu.sh"
-wget -O ipsaya "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/ipsaya.sh"
-wget -O sl-fix "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/sslh-fix/sl-fix"
-wget -O setmenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/setmenu.sh"
-wget -O running "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/running.sh"
-wget -O updatemenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/updatemenu.sh"
-wget -O menuinfo "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/menuinfo.sh"
-wget -O sshovpnmenu "https://raw.githubusercontent.com/ibed-berto/Allvpn/main/update/sshovpn.sh"
+wget -O restart "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/restart.sh"
+wget -O addssh "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/addssh.sh"
+wget -O menu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/menu.sh"
+wget -O ipsaya "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ipsaya.sh"
+wget -O sl-fix "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/sl-fix.sh"
+wget -O setmenu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/setmenu.sh"
+wget -O running "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/running.sh"
+wget -O updatemenu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/updatemenu.sh"
+wget -O menuinfo "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/menuinfo.sh"
+wget -O sshovpnmenu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/sshovpn.sh"
 
 chmod +x restart
 chmod +x addssh
