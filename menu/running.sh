@@ -211,7 +211,7 @@ kernelku=$(uname -r)
 # WAKTU SEKARANG 
 #harini=`date -d "0 days" +"%d-%m-%Y"`
 #jam=`date -d "0 days" +"%X"`
-waktuku='date'
+saiki='date'
 
 # DNS PATCH
 #tipeos2=$(uname -m)
@@ -227,7 +227,7 @@ echo -e "❇️ OS Name     : $Tipe"
 echo -e "❇️ Total RAM   : ${totalram}MB"
 echo -e "❇️ Public IP   : $MYIP"
 echo -e "❇️ Domain      : $Domen"
-echo -e "❇️ Waktu       : $waktuku"
+echo -e "❇️ Waktu       : $saiki"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m          ⇱ Subscription Information ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
