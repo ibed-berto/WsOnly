@@ -11,7 +11,8 @@ rm -rf delexp
 rm -rf delssh 
 rm -rf member 
 rm -rf restart 
-rm -rf tendang 
+rm -rf tendang
+rm -rf clearlog
 
 rm -rf info 
 rm -rf ipsaya 
@@ -38,6 +39,7 @@ wget -O delssh "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ss
 wget -O member "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/member.sh"
 wget -O restart "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/restart.sh"
 wget -O tendang "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/tendang.sh"
+wget -O clearlog "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/clearlog.sh"
 
 wget -O info "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/info.sh"
 wget -O ipsaya "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ipsaya.sh"
@@ -62,7 +64,8 @@ chmod +x delexp
 chmod +x delssh 
 chmod +x member 
 chmod +x restart 
-chmod +x tendang 
+chmod +x tendang
+chmod +x clearlog
 
 chmod +x info 
 chmod +x ipsaya 
