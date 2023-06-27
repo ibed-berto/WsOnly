@@ -4,6 +4,7 @@
 
 # download menu
 cd /usr/bin
+rm -rf clearlog
 rm -rf menu
 rm -rf restart
 rm -rf addssh
@@ -14,6 +15,7 @@ rm -rf setmenu
 rm -rf running
 rm -rf updatemenu
 
+wget -O clearlog "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/clearlog.sh"
 wget -O restart "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/restart.sh"
 wget -O addssh "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/ssh/addssh.sh"
 wget -O menu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/menu.sh"
@@ -24,6 +26,7 @@ wget -O running "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/r
 wget -O updatemenu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/updatemenu.sh"
 wget -O sshovpnmenu "https://raw.githubusercontent.com/ibed-berto/WsOnly/main/menu/sshovpnmenu.sh"
 
+chmod +x clearlog
 chmod +x restart
 chmod +x addssh
 chmod +x menu
