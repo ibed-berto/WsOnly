@@ -211,7 +211,7 @@ kernelku=$(uname -r)
 # WAKTU SEKARANG 
 #harini=`date -d "0 days" +"%d-%m-%Y"`
 #jam=`date -d "0 days" +"%X"`
-saiki='date'
+saiki='date -d "0 days"'
 
 # DNS PATCH
 #tipeos2=$(uname -m)
