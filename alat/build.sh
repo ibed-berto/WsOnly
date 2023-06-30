@@ -88,6 +88,9 @@ echo "/usr/sbin/nologin" >> /etc/shells
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 
+# disble ipv6
+echo "net.ipv6.conf.all.disable_ipv6 = 1" >>  /etc/sysctl.conf
+
 # Install SSLH
 apt -y install sslh
 rm -f /etc/default/sslh
