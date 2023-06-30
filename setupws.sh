@@ -38,6 +38,8 @@ rm -f /root/stunnel5.sh
 rm -f /root/install.sh
 rm -f /root/addmenu.sh
 
+clear
+
 echo "============================================================================" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo "----------------------------------------------------------------------------" | tee -a log-install.txt
