@@ -30,8 +30,6 @@ ssl="$(cat ~/log-install.txt | grep -w "Stunnel5" | cut -d: -f2)"
 
 clear
 
-systemctl restart ws-tls
-systemctl restart ws-nontls
 
 useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $Login
 expi="$(chage -l $Login | grep "Account expires" | awk -F": " '{print $2}')"
